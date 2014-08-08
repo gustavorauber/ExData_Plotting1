@@ -1,5 +1,8 @@
 # plot2.R - Global Active Power over Time
 
+# Set Language to English
+Sys.setlocale("LC_TIME","English")
+
 data <- read.csv("../household_power_consumption.txt", sep=";", skip=66637, 
                  nrows=2880, header=FALSE, 
                  na.strings=c("?"),
